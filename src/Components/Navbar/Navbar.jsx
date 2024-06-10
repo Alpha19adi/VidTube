@@ -19,9 +19,7 @@ const Navbar = ({setSideBar}) => {
     return (
         <nav className={darkmode ? 'nav-dark flex-div':'flex-div'}>
             <div className='nav-left flex-div'>
-                <img className='menu-icon' onClick={()=>{
-                    darkmode=(!darkmode);
-                }} src={menu_icon} alt="" />
+                <img className='menu-icon'src={menu_icon} alt="" />
                 <Link to='/'><img className='logo' src={logo} alt="" /></Link>
             </div>
             <div className='nav-middle flex-div'>
@@ -31,7 +29,7 @@ const Navbar = ({setSideBar}) => {
                 </div>
             </div>
             <div className='nav-right flex-div'>
-                <button onClick={()=>setdarkMode(!darkmode)}><img src={darkmode_icon} alt="" /></button>
+                <button><img src={darkmode_icon} alt="" /></button>
                 <img src={upload_icon} alt="" />
                 <img src={more_icon} alt="" />
                 <img src={notification_icon} alt="" />
