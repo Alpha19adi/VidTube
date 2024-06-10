@@ -1,5 +1,4 @@
-// export const API_KEY="AIzaSyCwo2MruW9UF2mmYdIWPEp3ug9aFWxitEc"
-// data.js
+
 export const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
 
 export const valueConverter = (value) => {
